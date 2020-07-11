@@ -1,0 +1,180 @@
+/*Tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6em;
+}
+
+/*Geral*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.mb{
+	margin-bottom: 15px;
+}
+
+#bg-top{
+	background: url(../images/bg-curve-desktop.svg) no-repeat top center;
+	background-size: cover;
+	height: 100px;
+}
+#bg-color{
+	
+	background-color: hsl(240, 75%, 98%);
+}
+
+#bg-green{
+	background-color: hsl(238, 22%, 44%);
+}
+
+.height{
+	height: 450px;
+	color: white;
+}
+
+i {
+	display: block;
+	width: 20px;
+	height: 30px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+input{
+	height: 35px;
+	width: 380px;
+	margin-right: 15px;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	background-color: hsl(224, 93%, 58%);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Cabecalho */
+nav{
+	margin-top: 30px;
+}
+
+.logo{
+	width: 180px;
+	height: 60px;
+	background: url(../images/logo.svg) no-repeat center left;
+	text-indent: -3000px;
+	float: left;
+}
+
+.menu-lista{
+	float: right;
+}
+
+.menu-itens{
+	display:  inline-block;
+	padding: 5px 0;
+	margin: 0 10px;
+	
+}
+
+.menu-link {
+		padding: 5px 15px;
+	border-radius: 15px;
+	transition: background 0.8s;
+}
+
+.menu-link:hover{
+	background: hsl(240, 75%, 98%);
+}
+
+/*Principal*/
+.linha{
+	display: flex;    /* Versão  Mobile = Block */
+	flex-direction: row;
+}
+
+.coluna{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+		width: 50%;
+}
+
+.img-fluid{
+	width: 100%;
+}
+
+/*Opiniao*/
+.comentario{
+	width: 400px;
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px hsl(0, 0%, 75%);
+}
+
+.comentario p{
+	font-size: 1em;
+}
+
+.quote{
+	background: url(../images/icon-quotes.svg) no-repeat center center;
+}
+
+.avatar{
+	width: 50px;
+	border-radius: 50px;
+	margin-right: 8px;
+
+}
+
+.italico{
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+/*Email*/
+.input{
+	width: 650px;
+	font-size: 1.2em;
+	padding-left: 15px;
+	font-family: 'Raleway' sans-serif;
+}
+
+.button{
+	width: 200px;
+	font-size: 1em;
+}	
+
+.large{
+	height: 55px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
