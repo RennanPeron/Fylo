@@ -39,21 +39,17 @@ p{
 	height: 100px;
 }
 #bg-color{
-	
 	background-color: hsl(240, 75%, 98%);
 }
 
 #bg-green{
 	background-color: hsl(238, 22%, 44%);
-}
-
-.height{
 	height: 450px;
 	color: white;
 }
 
 i {
-	display: block;
+	display: inline-block;
 	width: 20px;
 	height: 30px;
 }
@@ -66,23 +62,29 @@ a{
 
 input{
 	height: 35px;
-	width: 380px;
+	width: 40%;
 	margin-right: 15px;
+	margin-bottom: 15px;
+	padding-left: 5px;
 }
 
 button {
-	width: 150px;
+	width: 160px;
 	height: 40px;
 	background-color: hsl(224, 93%, 58%);
 	border: none;
 	border-radius: 5px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	cursor: pointer;
 }
 
 /* Cabecalho */
 nav{
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .logo{
@@ -93,8 +95,13 @@ nav{
 	float: left;
 }
 
+.branco{
+	background: url(../images/logo-white.svg) no-repeat center left;
+}
+
 .menu-lista{
 	float: right;
+	padding-top: 20px;
 }
 
 .menu-itens{
@@ -105,7 +112,7 @@ nav{
 }
 
 .menu-link {
-		padding: 5px 15px;
+	padding: 10px 20px;
 	border-radius: 15px;
 	transition: background 0.8s;
 }
@@ -117,6 +124,10 @@ nav{
 /*Principal*/
 .linha{
 	display: flex;    /* Versão  Mobile = Block */
+	flex-direction: row-reverse;
+}
+
+.normal{
 	flex-direction: row;
 }
 
@@ -124,7 +135,11 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-		width: 50%;
+	width: 50%;
+}
+
+.height{
+	height: 450px;
 }
 
 .img-fluid{
@@ -132,11 +147,22 @@ nav{
 }
 
 /*Opiniao*/
+.alternativo{
+	color: hsl(170, 45%, 43%);
+	text-decoration: underline;
+}
+
+.arrow{
+	background: url(../images/icon-arrow.svg) no-repeat center bottom;
+	background-size: 25px;
+}
+
 .comentario{
-	width: 400px;
+	width: 70%;
 	padding: 25px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 15px hsl(0, 0%, 75%);
+	margin-bottom: 50px;
 }
 
 .comentario p{
@@ -161,7 +187,7 @@ nav{
 
 /*Email*/
 .input{
-	width: 650px;
+	width: 65%;
 	font-size: 1.2em;
 	padding-left: 15px;
 	font-family: 'Raleway' sans-serif;
@@ -178,3 +204,149 @@ nav{
 	margin-bottom: 20px;
 	margin-left: 30px;
 }
+
+/*Rodape*/
+footer{
+	display: flex;
+	align-items: center;
+	height: 450px;
+	background: hsl(243, 87%, 12%);
+	color: white;
+}
+footer li {
+	font-family: "Open Sans";
+	margin-bottom: 18px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+footer li:hover{
+	text-decoration: underline;
+}
+
+.email{
+	background: url(../images/icon-email.svg) no-repeat center bottom;
+}
+
+.tel{
+	background: url(../images/icon-phone.svg) no-repeat center bottom;
+}
+
+.left{
+	float: left;
+}
+
+.social{
+	border: 1px solid white;
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	background: none;
+	line-height: 50px;
+	transition: color 0.8s, background 0.8s;
+}
+
+.social:hover{
+	background: white;
+	color: hsl(243, 87%, 12%);
+}
+
+/*Media Queries*/
+        /*Medium devices (tablets, 768px e maiores)*/
+        @media (max-width: 991.98px) {
+            /*Geral*/
+            body{
+                text-align: center;
+            }
+            .linha{
+            	display: block;
+            }
+            .coluna{
+            	width: 100%;
+            }
+
+           #bg-top{
+          		margin-top: 80px;
+           }
+
+           button, input{
+           	width: 80%;
+           	margin: 0px;
+           	margin-bottom: 10px;
+           	padding: 0px;
+           }
+
+
+           h2{
+           		font-size: 1.8em;
+           }
+
+           p{
+           		font-size: 1.4em;
+           }
+
+			/*Navegacao*/
+           .logo{
+           		width: 35%;
+           		background-size: 100%;
+           }
+           
+           .menu-itens{
+           		margin: 0px 5px;
+           		padding: 0px;
+           }
+
+           .menu-link{
+           		margin: 0px;
+           		padding: 0px;
+           		font-size: 0.9em;
+           }
+
+            /*Opiniao*/
+            .comentario{
+            	margin-left: auto;
+            	margin-right: auto;
+            	text-align: left;
+            }
+
+            /*Email*/
+            #bg-green{
+            	padding-bottom: 60px;
+            }
+
+            .large{
+            	width: 65%;
+            	padding: 0px;
+            	margin: 0px;
+            	margin-bottom: 10px;
+            }
+
+            .height{
+            	height: 100%;
+            	padding: 40px 0px;
+            }
+
+            .pt{
+            	padding-top: 40px;
+            }
+            /*Rodape*/
+            footer{
+            	height: 600px;
+            	text-align: left;
+            }
+
+            footer li{
+            	margin: 0px;
+            	margin-bottom: 10px;
+            }
+
+            footer ul{
+            	margin-bottom: 25px;
+            }
+
+            .left {
+            	float: left;
+            	margin-left: auto;
+            	margin-right: auto;
+            }
+        }
