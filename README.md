@@ -2,6 +2,9 @@
 
 ![Design preview for the Fylo landing page with two column layout challenge](./design/desktop-preview.jpg)
 
+## Link para a página:
+https://rennanperon.github.io/Fylo.github.io/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
